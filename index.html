@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Life</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="logo">
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/sunsetcloud.png" id="sunsetcloud">
+        <h2 id="text">Desert Life</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="images/desert_Front.png" id="desert_Front">
+       
+    </section>
+    <div class="sec"  id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure facere suscipit molestiae porro dolores rem placeat expedita veritatis. Eveniet sequi hic ratione rerum quisquam culpa sit deserunt odit modi? Laboriosam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit asperiores animi quo obcaecati doloribus vitae quos eum quae sit saepe numquam quia minima voluptate illum earum quaerat doloremque, aut magni!
+        <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+        est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid soluta accusantium et in, amet sapiente tenetur necessitatibus culpa laudantium sint earum doloribus fugiat quibusdam hic vero dolores. Distinctio, odit iste.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+           <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure facere suscipit molestiae porro dolores rem placeat expedita veritatis. Eveniet sequi hic ratione rerum quisquam culpa sit deserunt odit modi? Laboriosam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit asperiores animi quo obcaecati doloribus vitae quos eum quae sit saepe numquam quia minima voluptate illum earum quaerat doloremque, aut magni!
+        <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+        est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid soluta accusantium et in, amet sapiente tenetur necessitatibus culpa laudantium sint earum doloribus fugiat quibusdam hic vero dolores. Distinctio, odit iste. </p>
+    </div>
+    <script>
+        let sunsetcloud = document.getElementById('sunsetcloud');
+        let desert_Front = document.getElementById('desert_Front');
+        let text = document.getElementById('text');
+        let btn =document.getElementById('btn');
+        let header = document.querySelector('header');
+   
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            sunsetcloud.style.left = value * 0.10 + 'px';
+            /*moon.style.top = value * 1.05 + 'px'; */
+            /*mountain_behind.style.top = value * 0.5 + 'px';*/
+            desert_Front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+   </script>
+
+
+
+</body>
+</html>
